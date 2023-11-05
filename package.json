@@ -1,0 +1,14 @@
+{
+  "name": "react-minecraft",
+  "version": "1.0.0",
+  "description": "A React Implementation for Minecraft",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bufferhead (Gregor Vostrak)",
+  "license": "MIT",
+  "dependencies": {
+    "minecraft-protocol": "^1.44.0"
+  }
+}
