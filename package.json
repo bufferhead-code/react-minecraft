@@ -4,11 +4,22 @@
   "description": "A React Implementation for Minecraft",
   "main": "index.js",
   "scripts": {
+    "start": "DEBUG=\"minecraft-protocol\" ./node_modules/.bin/babel src --out-dir lib && node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bufferhead (Gregor Vostrak)",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
-    "minecraft-protocol": "^1.44.0"
+    "@babel/preset-react": "^7.22.15",
+    "flying-squid": "^1.5.0",
+    "react": "^18.2.0",
+    "react-reconciler": "^0.29.0",
+    "vec3": "^0.1.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2"
   }
 }
