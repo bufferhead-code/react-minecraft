@@ -65,7 +65,6 @@ const HostConfig = {
             for (let x = container.canvas.x; x < (container.canvas.x + container.canvas.xSpan); x++) {
                 for (let y = container.canvas.y; y < (container.canvas.y + container.canvas.ySpan); y++) {
                     for (let z = container.canvas.z; z < (container.canvas.z + container.canvas.zSpan); z++) {
-                        console.log('reset block', x, y, z, 'to air')
                         // Reset to Air Blocks
                         container.server.setBlock(container.world, new Vec3(x, y, z), 0);
                     }
