@@ -194,7 +194,7 @@ function Floor() {
         <>
             {[...Array(10)].map((x, i) =>
                 [...Array(10)].map((y, j) =>
-                    <Block x={i} y={0} z={j} name="grass_block" snowy={false}></Block>
+                    <Block x={i} y={0} z={j} name={i > 1 && i < 8 && j > 1 && j < 8 ? 'spruce_planks' : 'grass_block'} snowy={false}></Block>
                 )
             )
             }

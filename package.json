@@ -4,8 +4,10 @@
   "description": "A React Implementation for Minecraft",
   "main": "index.js",
   "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir lib",
     "start": "DEBUG=\"minecraft-protocol\" ./node_modules/.bin/babel src --out-dir lib && node lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reset-world": "rm -rf world && mkdir world"
   },
   "author": "Bufferhead (Gregor Vostrak)",
   "license": "MIT",
