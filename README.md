@@ -3,6 +3,10 @@
 React Minecraft is a project that allows you to create Minecraft worlds using React components.
 Just like React-DOM and React-Native, React Minecraft uses the React.js Framework and JSX to craft custom builds in Minecraft. With Minecraft Blocks.
 
+**You can watch how i made it [here](http://www.youtube.com/watch?v=YaX5ZAEqXD8)**
+
+[![Youtube Video about how this project was made](http://img.youtube.com/vi/YaX5ZAEqXD8/0.jpg)](http://www.youtube.com/watch?v=YaX5ZAEqXD8 "I built a Minecraft house using React.js")
+
 ## Run the project
 
 To run the project type `npm run start`. 
