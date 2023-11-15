@@ -7,6 +7,26 @@ Just like React-DOM and React-Native, React Minecraft uses the React.js Framewor
 
 [![Youtube Video about how this project was made](http://img.youtube.com/vi/YaX5ZAEqXD8/0.jpg)](http://www.youtube.com/watch?v=YaX5ZAEqXD8 "I built a Minecraft house using React.js")
 
+An Example for the Top Layer Component for a Minecraft house could look like this:
+
+```javascript
+export default function House() {
+    return (
+        <>
+            <Canvas x={1} y={4} z={1} xSpan={10} ySpan={10} zSpan={10}>
+                <Floor></Floor>
+                <Walls></Walls>
+                <CornerFlowerBed facing="east" x={2} y={1} z={0}></CornerFlowerBed>
+                <CornerFlowerBed x={6} y={1} z={0} facing="west"></CornerFlowerBed>
+                <Roof></Roof>
+                <LongFlowerBed x={0} y={1} z={2} facing="west"></LongFlowerBed>
+                <LongFlowerBed x={8} y={1} z={2} facing="east"></LongFlowerBed>
+            </Canvas>
+        </>
+    )
+}
+```
+
 ## Run the project
 
 To run the project type `npm run start`. 
